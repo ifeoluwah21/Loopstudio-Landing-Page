@@ -47,7 +47,7 @@ body > main > .hero-section > .hero-text > h2 {
 body > main > .hero-section > .hero-text > p {
   font-family: "Alata";
   font-size: 1rem;
-  color: #000;
+  color: #8c8c8c;
 }
 
 body > main > .hero-section > .hero-img-div {
@@ -111,11 +111,12 @@ body > main > section.gallery-section > button {
       justify-self: end;
   background-color: #fff;
   color: #000;
-  width: 100px;
-  height: 30px;
-  border: 1px solid black;
+  width: 200px;
+  height: 40px;
+  border: 2px solid dimgray;
   font-family: "Josefin Sans";
   font-weight: 200;
+  cursor: pointer;
 }
 
 body > main > section.gallery-section > div.gallery {
@@ -130,11 +131,205 @@ body > main > section.gallery-section > div.gallery {
 
 body > main > section.gallery-section > div.gallery > div {
   width: 100%;
+  position: relative;
 }
 
 body > main > section.gallery-section > div.gallery > div > img {
   width: 100%;
   height: auto;
+}
+
+body > main > section.gallery-section > div.gallery > div.earth::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "DEEP EARTH";
+  font-size: 1.5rem;
+  word-spacing: 2px;
+  font-family: "Josefin Sans";
+  font-weight: 100;
+  color: white;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+body > main > section.gallery-section > div.gallery > div.arcade::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "NIGHT ARCADE";
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  font-weight: 100;
+  color: white;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+body > main > section.gallery-section > div.gallery > div.soccer::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "SOCCER TEAM VR";
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  font-weight: 100;
+  color: white;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+body > main > section.gallery-section > div.gallery > div.grid::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "THE GRID";
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  font-weight: 100;
+  color: white;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+body > main > section.gallery-section > div.gallery > div.above::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "FROM UP ABOVE VR";
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  font-weight: 100;
+  color: white;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+body > main > section.gallery-section > div.gallery > div.pocket::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "POCKET BOREALIS";
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  font-weight: 100;
+  color: white;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+body > main > section.gallery-section > div.gallery > div.curiosity::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "THE CURIOSITY";
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  font-weight: 100;
+  color: white;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+body > main > section.gallery-section > div.gallery > div.fisheye::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "MAKE IT FISHEYE";
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  font-weight: 100;
+  color: white;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
 }
 
 header {
@@ -212,5 +407,99 @@ header nav > ul > li > a {
   padding: 0.5rem 0;
   font-family: "Alata", sans-serif;
   font-size: 1rem;
+}
+
+footer {
+  background-color: #000;
+  display: -ms-grid;
+  display: grid;
+  grid: repeat(6, 1rem)/repeat(12, 1fr);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 10vw 1.5rem;
+}
+
+footer > div.footer-logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+footer > div.social-logo {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7/13;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+footer > div.social-logo > a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer > nav.footer-nav {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 3;
+  grid-row: 4/7;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer > nav.footer-nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer > nav.footer-nav > ul > li {
+  list-style: none;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+footer > nav.footer-nav > ul > li > a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  font-family: "Alata";
+  font-weight: 400;
+}
+
+footer > p {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 5;
+  grid-column: 8/13;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 3;
+  grid-row: 4/7;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Alata";
+  font-size: 1rem;
+  color: dimgray;
 }
 /*# sourceMappingURL=style.css.map */
