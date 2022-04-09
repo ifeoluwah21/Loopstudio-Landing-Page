@@ -81,6 +81,33 @@ body {
         font-family: "Josefin Sans";
         font-weight: 200;
         cursor: pointer;
+        transition: all 0.5s ease;
+        position: relative;
+        overflow-y: hidden;
+        transition: all 0.3s ease-in;
+        z-index: 3;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: #000;
+          transform: translateY(100%);
+          transition: all 0.3s ease-in;
+          z-index: -1;
+        }
+        &:hover {
+          background-color: rgba(0, 0, 0, 0);
+          color: #fff;
+          z-index: 10;
+        }
+        &:hover::after {
+          z-index: -2;
+          transform: translateY(0);
+        }
       }
 
       & > div.gallery {
@@ -295,6 +322,23 @@ header {
           padding: 0.5rem 0;
           font-family: "Alata", sans-serif;
           font-size: 1rem;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: 25%;
+            left: 25%;
+            transform: translateX(-50%);
+            bottom: 0;
+            transition: all 0.2s ease-in;
+            border-bottom: 2px solid rgba($color: #fff, $alpha: 0);
+          }
+
+          &:hover::after {
+            border-bottom: 2px solid #fff;
+            transform: translateX(0);
+          }
         }
       }
     }
@@ -346,6 +390,23 @@ footer {
           padding: 0.5rem 0.5rem 0.5rem 0;
           font-family: "Alata";
           font-weight: 400;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: 25%;
+            left: 25%;
+            transform: translateX(-50%);
+            bottom: 0;
+            transition: all 0.2s ease-in;
+            border-bottom: 2px solid rgba($color: #fff, $alpha: 0);
+          }
+
+          &:hover::after {
+            border-bottom: 2px solid #fff;
+            transform: translateX(0);
+          }
         }
       }
     }

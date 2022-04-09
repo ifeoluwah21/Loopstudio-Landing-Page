@@ -117,6 +117,40 @@ body > main > section.gallery-section > button {
   font-family: "Josefin Sans";
   font-weight: 200;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow-y: hidden;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  z-index: 3;
+}
+
+body > main > section.gallery-section > button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  z-index: -1;
+}
+
+body > main > section.gallery-section > button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  z-index: 10;
+}
+
+body > main > section.gallery-section > button:hover::after {
+  z-index: -2;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 body > main > section.gallery-section > div.gallery {
@@ -407,6 +441,26 @@ header nav > ul > li > a {
   padding: 0.5rem 0;
   font-family: "Alata", sans-serif;
   font-size: 1rem;
+  position: relative;
+}
+
+header nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  right: 25%;
+  left: 25%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+header nav > ul > li > a:hover::after {
+  border-bottom: 2px solid #fff;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 footer {
@@ -484,6 +538,26 @@ footer > nav.footer-nav > ul > li > a {
   padding: 0.5rem 0.5rem 0.5rem 0;
   font-family: "Alata";
   font-weight: 400;
+  position: relative;
+}
+
+footer > nav.footer-nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  right: 25%;
+  left: 25%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+footer > nav.footer-nav > ul > li > a:hover::after {
+  border-bottom: 2px solid #fff;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 footer > p {
