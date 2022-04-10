@@ -538,7 +538,7 @@ footer > p {
     -ms-grid-column-align: end;
         justify-self: end;
     position: fixed;
-    z-index: 10;
+    z-index: 12;
     top: 3rem;
   }
   body > header > section {
