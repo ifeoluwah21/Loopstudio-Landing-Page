@@ -18,7 +18,7 @@ body > main {
 body > main > .hero-section {
   display: -ms-grid;
   display: grid;
-  grid: repeat(6, 4rem)/repeat(5, 10rem);
+  grid: repeat(6, 1fr)/repeat(5, 1fr);
 }
 
 body > main > .hero-section > .hero-text {
@@ -113,7 +113,7 @@ body > main > section.gallery-section > button {
   color: #000;
   width: 200px;
   height: 40px;
-  border: 2px solid dimgray;
+  border: 2px solid #000;
   font-family: "Josefin Sans";
   font-weight: 200;
   cursor: pointer;
@@ -173,161 +173,23 @@ body > main > section.gallery-section > div.gallery > div > img {
   height: auto;
 }
 
-body > main > section.gallery-section > div.gallery > div.earth::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "DEEP EARTH";
-  font-size: 1.5rem;
-  word-spacing: 2px;
-  font-family: "Josefin Sans";
-  font-weight: 100;
-  color: white;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-}
-
-body > main > section.gallery-section > div.gallery > div.arcade::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "NIGHT ARCADE";
-  font-size: 1.5rem;
-  font-family: "Josefin Sans";
-  font-weight: 100;
-  color: white;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-}
-
-body > main > section.gallery-section > div.gallery > div.soccer::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "SOCCER TEAM VR";
-  font-size: 1.5rem;
-  font-family: "Josefin Sans";
-  font-weight: 100;
-  color: white;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-}
-
-body > main > section.gallery-section > div.gallery > div.grid::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "THE GRID";
-  font-size: 1.5rem;
-  font-family: "Josefin Sans";
-  font-weight: 100;
-  color: white;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-}
-
-body > main > section.gallery-section > div.gallery > div.above::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "FROM UP ABOVE VR";
-  font-size: 1.5rem;
-  font-family: "Josefin Sans";
-  font-weight: 100;
-  color: white;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-}
-
-body > main > section.gallery-section > div.gallery > div.pocket::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "POCKET BOREALIS";
-  font-size: 1.5rem;
-  font-family: "Josefin Sans";
-  font-weight: 100;
-  color: white;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-}
-
+body > main > section.gallery-section > div.gallery > div.earth::after,
+body > main > section.gallery-section > div.gallery > div.arcade::after,
+body > main > section.gallery-section > div.gallery > div.grid::after,
+body > main > section.gallery-section > div.gallery > div.above::after,
+body > main > section.gallery-section > div.gallery > div.pocket::after,
+body > main > section.gallery-section > div.gallery > div.soccer::after,
+body > main > section.gallery-section > div.gallery > div.fisheye::after,
 body > main > section.gallery-section > div.gallery > div.curiosity::after {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  content: "THE CURIOSITY";
   font-size: 1.5rem;
+  word-spacing: 2px;
   font-family: "Josefin Sans";
-  font-weight: 100;
+  font-weight: 300;
   color: white;
   overflow: hidden;
   -webkit-box-sizing: border-box;
@@ -338,32 +200,49 @@ body > main > section.gallery-section > div.gallery > div.curiosity::after {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   padding-left: 2rem;
+  padding-right: 1rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  white-space: pre-wrap;
+}
+
+body > main > section.gallery-section > div.gallery > div.earth::after {
+  content: "DEEP\A EARTH";
+}
+
+body > main > section.gallery-section > div.gallery > div.arcade::after {
+  content: "NIGHT\A ARCADE";
+}
+
+body > main > section.gallery-section > div.gallery > div.soccer::after {
+  content: "SOCCER\A TEAM VR";
+}
+
+body > main > section.gallery-section > div.gallery > div.grid::after {
+  content: "THE\A GRID";
+}
+
+body > main > section.gallery-section > div.gallery > div.above::after {
+  content: "FROM UP\A ABOVE VR";
+}
+
+body > main > section.gallery-section > div.gallery > div.pocket::after {
+  content: "POCKET\A BOREALIS";
+}
+
+body > main > section.gallery-section > div.gallery > div.curiosity::after {
+  content: "THE\A CURIOSITY";
 }
 
 body > main > section.gallery-section > div.gallery > div.fisheye::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "MAKE IT FISHEYE";
-  font-size: 1.5rem;
-  font-family: "Josefin Sans";
-  font-weight: 100;
-  color: white;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
+  content: "MAKE IT\A FISHEYE";
+}
+
+body > main > section.gallery-section > div.gallery > div:hover::after {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 header {
@@ -408,6 +287,10 @@ header > section > h1 {
   line-height: 1;
 }
 
+header > div.hamburger {
+  display: none;
+}
+
 header nav {
   -ms-grid-column: 6;
   -ms-grid-column-span: 7;
@@ -420,6 +303,10 @@ header nav {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+header nav > div.nav-logo {
+  display: none;
 }
 
 header nav > ul {
@@ -575,5 +462,221 @@ footer > p {
   font-family: "Alata";
   font-size: 1rem;
   color: dimgray;
+}
+
+@media screen and (max-width: 430px) {
+  body > header {
+    display: -ms-grid;
+    display: grid;
+    background-image: url(../images/mobile/image-hero.jpg);
+    grid: repeat(10, 10vh)/repeat(10, 1fr);
+    padding: 0 2rem;
+  }
+  body > header > nav.toggle {
+    margin-left: 0;
+  }
+  body > header > nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    margin-left: 100%;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    padding: 40px 0 0 2rem;
+  }
+  body > header > nav > ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 80%;
+  }
+  body > header > nav > ul > li {
+    margin: 0.5em 0;
+    padding-left: 0;
+  }
+  body > header > nav > ul > li > a {
+    font-family: "Josefin Sans";
+    font-size: 2rem;
+    padding: 0 0 0.5rem;
+  }
+  body > header > nav > div.nav-logo {
+    display: block;
+  }
+  body > header > img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body > header > div.hamburger {
+    display: block;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 2;
+    grid-column: 9/11;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    position: fixed;
+    z-index: 10;
+    top: 3rem;
+  }
+  body > header > section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 10;
+    grid-column: 1/11;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 4;
+    grid-row: 5/9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body > header > section > h1 {
+    padding: 0 1rem;
+    font-size: 3.5rem;
+  }
+  body > main {
+    padding: 2rem;
+  }
+  body > main > section.hero-section {
+    grid: repeat(5, 1fr)/repeat(5, 1fr);
+  }
+  body > main > section.hero-section > div.hero-img-div {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    height: 100%;
+  }
+  body > main > section.hero-section > div.hero-text {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    grid-row: 3/6;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  body > main > section.hero-section > div.hero-text > h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  body > main > section.hero-section > div.hero-text > p {
+    word-spacing: 2px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.2em;
+  }
+  body > main > section.gallery-section {
+    grid: 4rem auto 4rem/repeat(5, 1fr);
+  }
+  body > main > section.gallery-section > h3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    font-size: 2em;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-weight: 900;
+  }
+  body > main > section.gallery-section > button {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-weight: 700;
+  }
+  body > main > section.gallery-section > div.gallery {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+    grid: auto-flow 1fr/1fr;
+  }
+  body > main > section.gallery-section > div.gallery > div::after {
+    padding: 0 0 1rem 1rem;
+    width: 10rem;
+  }
+  body > footer {
+    grid: 4rem auto 4rem 4rem/ 1fr;
+  }
+  body > footer > div.footer-logo,
+  body > footer > div.social-logo,
+  body > footer > nav.footer-nav,
+  body > footer > p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body > footer > div.footer-logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  body > footer > nav.footer-nav {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  body > footer > nav.footer-nav > ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  body > footer > div.social-logo {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  body > footer > p {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
 }
 /*# sourceMappingURL=style.css.map */
