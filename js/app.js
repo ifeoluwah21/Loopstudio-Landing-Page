@@ -22,11 +22,11 @@ class LoopPage {
     }
   }
 
-  resizeGalleryImg(e) {
+  resizeGalleryImg() {
     this.galleryImg.forEach((img) => {
-      if (e.innerWidth > 450 && img.src.includes(`desktop`)) {
+      if (window.innerWidth > 450) {
         console.log(`We are in Desktop mode`);
-      } else if (innerWidth > 450 && !img.src.includes(`desktop`)) {
+      } else if (window.innerWidth > 450 && !img.src.includes(`desktop`)) {
         img.src = img.src.replace(`mobile`, `desktop`);
       } else {
         img.src = img.src.replace(`desktop`, `mobile`);
@@ -41,10 +41,10 @@ thisPage.menuBtn.addEventListener(`click`, () => {
   thisPage.onMenuBtnClick();
 });
 
-window.addEventListener(`DOMContentLoaded`, (e) => {
-  thisPage.resizeGalleryImg(e);
+window.addEventListener(`DOMContentLoaded`, () => {
+  thisPage.resizeGalleryImg();
 });
 
-window.addEventListener(`resize`, (e) => {
-  thisPage.resizeGalleryImg(e);
+window.addEventListener(`resize`, () => {
+  thisPage.resizeGalleryImg();
 });
