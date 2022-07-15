@@ -464,7 +464,7 @@ footer > p {
   color: dimgray;
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 520px) {
   body > header {
     display: -ms-grid;
     display: grid;
